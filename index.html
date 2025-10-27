@@ -4,36 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andre Felipe - Analista de Dados & Automação</title>
-    <!-- ===== META TAGS SEO ===== -->
     <meta name="description" content="André Felipe Sousa - Analista de Dados especializado em Power BI, Python, SQL e Automação. Transformo dados em decisões estratégicas para PMEs.">
     <meta name="keywords" content="analista de dados, power bi, python, sql, automação, dashboards, etl, business intelligence">
     <meta name="author" content="André Felipe Sousa">
     <meta name="robots" content="index, follow">
 
-    <!-- ===== OPEN GRAPH (Facebook/LinkedIn) ===== -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://andre-f-sousa.github.io/portfolio/">
     <meta property="og:title" content="André Felipe Sousa - Analista de Dados & Automação">
     <meta property="og:description" content="Especialista em Power BI, Python, SQL e Automação de Processos. Transformo dados em decisões inteligentes.">
     <meta property="og:image" content="https://andre-f-sousa.github.io/portfolio/img.jpg">
 
-    <!-- ===== TWITTER CARD ===== -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://andre-f-sousa.github.io/portfolio/">
     <meta property="twitter:title" content="André Felipe Sousa - Analista de Dados">
     <meta property="twitter:description" content="Especialista em Power BI, Python, SQL e Automação de Processos.">
     <meta property="twitter:image" content="https://andre-f-sousa.github.io/portfolio/img.jpg">
 
-    <!-- ===== FAVICON ===== -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 
     
-    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
@@ -776,7 +770,7 @@
         }
 
         /* ========================================================================== */
-        /*                    BOTÃO FLUTUANTE WHATSAPP                                */
+        /* BOTÃO FLUTUANTE WHATSAPP                                */
         /* ========================================================================== */
 
         .whatsapp-float {
@@ -805,7 +799,7 @@
         }
 
         /* ========================================================================== */
-        /*                    LINKS SOCIAIS NO FOOTER                                 */
+        /* LINKS SOCIAIS NO FOOTER                                 */
         /* ========================================================================== */
 
         .social-links {
@@ -827,7 +821,7 @@
         }
 
         /* ========================================================================== */
-        /*                    MENU COM INDICADOR DE SEÇÃO ATIVA                       */
+        /* MENU COM INDICADOR DE SEÇÃO ATIVA                       */
         /* ========================================================================== */
 
         .nav-links a {
@@ -841,7 +835,7 @@
         }
 
         /* ========================================================================== */
-        /*                    MENSAGENS DE ERRO DO FORMULÁRIO                         */
+        /* MENSAGENS DE ERRO DO FORMULÁRIO                         */
         /* ========================================================================== */
 
         .error-message {
@@ -867,7 +861,6 @@
     </script>
 </head>
 <body>
-    <!-- Header -->
     <header>
         <nav>
             <a href="#" class="logo">Andre Felipe</a>
@@ -884,7 +877,6 @@
         </nav>
     </header>
 
-    <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <div class="hero-text">
@@ -900,7 +892,6 @@
         </div>
     </section>
 
-    <!-- About Section -->
     <section id="sobre" class="about">
         <div class="container">
             <h2 class="section-title fade-in">Sobre Mim</h2>
@@ -935,7 +926,6 @@
         </div>
     </section>
 
-    <!-- Services Section -->
     <section id="servicos" class="services">
         <div class="container">
             <h2 class="section-title fade-in">Serviços</h2>
@@ -964,7 +954,6 @@
         </div>
     </section>
 
-    <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio">
         <div class="container">
             <h2 class="section-title fade-in">Portfólio</h2>
@@ -1013,7 +1002,6 @@
         </div>
     </section>
 
-    <!-- Testimonials Section -->
     <section class="testimonials">
         <div class="container">
             <h2 class="section-title fade-in">Depoimentos</h2>
@@ -1052,16 +1040,15 @@
         </div>
     </section>
 
-    <!-- Contact Section -->
     <section id="contato" class="contact">
         <div class="container">
             <h2 class="section-title fade-in">Contato</h2>
             <div class="contact-content">
                 <div class="contact-form fade-in">
-                    <form id="contactForm">
+                    <form id="contactForm" action="https://formspree.io/f/mjkpgypv" method="POST">
                         <div class="form-group">
                             <label for="name">Nome</label>
-                            <input type="text" id="name" name="name" name="name" required>
+                            <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">E-mail</label>
@@ -1069,7 +1056,7 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Mensagem</label>
-                            <textarea id="message" name="message" name="message" required></textarea>
+                            <textarea id="message" name="message" required></textarea>
                         </div>
                         <button type="submit" class="cta-button">Enviar Mensagem</button>
                     </form>
@@ -1088,12 +1075,10 @@
         </div>
     </section>
 
-    <!-- WhatsApp Button -->
     <a href="https://wa.me/5538988464487" class="whatsapp-button" target="_blank">
         <i class="fab fa-whatsapp"></i>
     </a>
 
-    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <div class="footer-links">
@@ -1202,22 +1187,10 @@
             observer.observe(el);
         });
 
-        // Form submission
-        document.getElementById('contactForm').addEventListener('submit', (e) => {
-            e.preventDefault();
-            
-            // Get form values
-            const name = document.getElementById('name').value;
-            const email = document.getElementById('email').value;
-            const message = document.getElementById('message').value;
-            
-            // Here you would normally send the form data to a server
-            // For now, we'll just show a success message
-            alert(`Obrigado, ${name}! Sua mensagem foi enviada com sucesso. Entrarei em contato em breve.`);
-            
-            // Reset form
-            document.getElementById('contactForm').reset();
-        });
+        // ===== BLOCO DE SUBMISSÃO DE FORMULÁRIO REMOVIDO DAQUI =====
+        // O bloco que estava aqui foi removido pois era redundante
+        // e impedia o envio para o Formspree.
+
     </script>
 
     <a href="https://wa.me/5538988464487?text=Olá%20André,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar" 
@@ -1230,9 +1203,6 @@
     </a>
 
 
-    <!-- ========================================================================== -->
-    <!--                    JAVASCRIPT - VALIDAÇÃO E INTERATIVIDADE                 -->
-    <!-- ========================================================================== -->
     <script>
     document.addEventListener('DOMContentLoaded', function() {
         // ===== VALIDAÇÃO DO FORMULÁRIO EM TEMPO REAL =====
@@ -1329,7 +1299,7 @@
 
             // Validação no envio
             form.addEventListener('submit', function(e) {
-                e.preventDefault();
+                // NÃO usamos e.preventDefault() aqui de imediato
 
                 let isValid = true;
 
@@ -1348,10 +1318,14 @@
                     isValid = false;
                 }
 
-                if (isValid) {
-                    alert('✓ Formulário válido! Obrigado pelo contato. Em breve responderei sua mensagem.');
-                    form.reset();
+                // **AJUSTE PRINCIPAL:**
+                // Só impedimos o envio se o formulário for INVÁLIDO.
+                if (!isValid) {
+                    e.preventDefault(); // Impede o envio.
                 }
+                
+                // Se for válido, o script não faz nada e o navegador
+                // envia o formulário para o 'action' (Formspree).
             });
         }
 
@@ -1398,4 +1372,3 @@
 </body>
 
 </html>
-
