@@ -1,9 +1,45 @@
+<!--
+==============================================================================
+PORTFÓLIO ANDRÉ FELIPE SOUSA - VERSÃO OTIMIZADA 2025
+==============================================================================
+
+⚠️ ATENÇÃO - SUBSTITUIR ANTES DE PUBLICAR:
+1. Número WhatsApp: 5511999999999 → SEU NÚMERO REAL (2 lugares)
+2. Links sociais: Confirmar LinkedIn e GitHub
+3. Google Analytics: Ver instruções no código (opcional)
+
+==============================================================================
+-->
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andre Felipe - Analista de Dados & Automação</title>
+    <!-- ===== META TAGS SEO ===== -->
+    <meta name="description" content="André Felipe Sousa - Analista de Dados especializado em Power BI, Python, SQL e Automação. Transformo dados em decisões estratégicas para PMEs.">
+    <meta name="keywords" content="analista de dados, power bi, python, sql, automação, dashboards, etl, business intelligence">
+    <meta name="author" content="André Felipe Sousa">
+    <meta name="robots" content="index, follow">
+
+    <!-- ===== OPEN GRAPH (Facebook/LinkedIn) ===== -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://andre-f-sousa.github.io/portfolio/">
+    <meta property="og:title" content="André Felipe Sousa - Analista de Dados & Automação">
+    <meta property="og:description" content="Especialista em Power BI, Python, SQL e Automação de Processos. Transformo dados em decisões inteligentes.">
+    <meta property="og:image" content="https://andre-f-sousa.github.io/portfolio/img.jpg">
+
+    <!-- ===== TWITTER CARD ===== -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://andre-f-sousa.github.io/portfolio/">
+    <meta property="twitter:title" content="André Felipe Sousa - Analista de Dados">
+    <meta property="twitter:description" content="Especialista em Power BI, Python, SQL e Automação de Processos.">
+    <meta property="twitter:image" content="https://andre-f-sousa.github.io/portfolio/img.jpg">
+
+    <!-- ===== FAVICON ===== -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -679,7 +715,174 @@
                 font-size: 2rem;
             }
         }
+
+
+        /* ========================================================================== */
+        /*                    MELHORIAS DE RESPONSIVIDADE                             */
+        /* ========================================================================== */
+
+        /* Tablets (768px e abaixo) */
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+                padding: 1rem 3%;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 1rem;
+                margin-top: 1rem;
+            }
+
+            .hero h1 {
+                font-size: 2.5rem !important;
+            }
+
+            .hero p {
+                font-size: 1.1rem !important;
+            }
+
+            .cards, .portfolio-grid {
+                grid-template-columns: 1fr !important;
+            }
+
+            .skills-icons {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+
+            .depoimentos-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        /* Smartphones (480px e abaixo) */
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.4rem !important;
+            }
+
+            .hero h1 {
+                font-size: 2rem !important;
+                line-height: 1.2 !important;
+            }
+
+            .hero p {
+                font-size: 1rem !important;
+            }
+
+            .cta-button {
+                padding: 0.6rem 1.2rem !important;
+                font-size: 0.9rem !important;
+            }
+
+            section {
+                padding: 3rem 5% !important;
+            }
+
+            h2 {
+                font-size: 2rem !important;
+            }
+
+            .form-group input,
+            .form-group textarea {
+                font-size: 16px !important; /* Evita zoom automático no iOS */
+            }
+
+            .skills-icons {
+                grid-template-columns: 1fr !important;
+            }
+        }
+
+        /* ========================================================================== */
+        /*                    BOTÃO FLUTUANTE WHATSAPP                                */
+        /* ========================================================================== */
+
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            text-decoration: none;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128c7e;
+            transform: scale(1.1);
+        }
+
+        /* ========================================================================== */
+        /*                    LINKS SOCIAIS NO FOOTER                                 */
+        /* ========================================================================== */
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .social-links a {
+            color: var(--accent);
+            font-size: 2rem;
+            transition: transform 0.3s;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            transform: scale(1.2);
+        }
+
+        /* ========================================================================== */
+        /*                    MENU COM INDICADOR DE SEÇÃO ATIVA                       */
+        /* ========================================================================== */
+
+        .nav-links a {
+            position: relative;
+            padding-bottom: 4px;
+        }
+
+        .nav-links a.active {
+            color: var(--accent);
+            border-bottom: 2px solid var(--accent);
+        }
+
+        /* ========================================================================== */
+        /*                    MENSAGENS DE ERRO DO FORMULÁRIO                         */
+        /* ========================================================================== */
+
+        .error-message {
+            color: #ef4444;
+            font-size: 0.875rem;
+            margin-top: 0.25rem;
+            display: block;
+        }
+
+        .form-group input.error,
+        .form-group textarea.error {
+            border-color: #ef4444 !important;
+        }
+
     </style>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6N1LE5MR5M"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-6N1LE5MR5M');
+    </script>
 </head>
 <body>
     <!-- Header -->
@@ -918,7 +1121,47 @@
                 <a href="#contato">Contato</a>
             </div>
             <div class="footer-info">
-                <p>&copy; 2024 Andre Felipe. Todos os direitos reservados.</p>
+                
+        <!-- ========================================================================== -->
+        <!--                         LINKS SOCIAIS                                      -->
+        <!-- ========================================================================== -->
+        <!-- ⚠️ ATENÇÃO: Confirme se os links estão corretos -->
+        <!-- LinkedIn: Substitua /andre-felipe-sousa/ pelo seu perfil real -->
+        <!-- GitHub: Confirme se andre-f-sousa está correto -->
+        <!-- WhatsApp: Substitua 5511999999999 pelo seu número real -->
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/andre-felipe-sousa/" 
+               target="_blank" 
+               rel="noopener noreferrer" 
+               title="LinkedIn - André Felipe Sousa"
+               aria-label="Meu perfil no LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="https://github.com/andre-f-sousa" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               title="GitHub - andre-f-sousa"
+               aria-label="Meu perfil no GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+
+            <a href="mailto:andre.f.sousa@outlook.com"
+               title="E-mail - andre.f.sousa@outlook.com"
+               aria-label="Enviar e-mail">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+            <a href="https://wa.me/5538988464487?text=Olá%20André,%20vi%20seu%20portfólio" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               title="WhatsApp"
+               aria-label="Conversar no WhatsApp">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+
+<p>&copy; 2024 Andre Felipe. Todos os direitos reservados.</p>
                 <p>E-mail: andre.f.sousa@outlook.com</p>
             </div>
         </div>
@@ -1001,8 +1244,188 @@
             document.getElementById('contactForm').reset();
         });
     </script>
+
+    <!-- ========================================================================== -->
+    <!--                      BOTÃO FLUTUANTE WHATSAPP                              -->
+    <!-- ========================================================================== -->
+    <!-- ⚠️ ATENÇÃO: SUBSTITUA 5511999999999 PELO SEU NÚMERO REAL -->
+    <!-- Formato: 55 + DDD + Número (sem espaços, parênteses ou traços) -->
+    <!-- Exemplo: 5511987654321 -->
+    <a href="https://wa.me/5538988464487?text=Olá%20André,%20vi%20seu%20portfólio%20e%20gostaria%20de%20conversar" 
+       class="whatsapp-float" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       title="Fale comigo no WhatsApp"
+       aria-label="Contato via WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+
+    <!-- ========================================================================== -->
+    <!--                    JAVASCRIPT - VALIDAÇÃO E INTERATIVIDADE                 -->
+    <!-- ========================================================================== -->
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // ===== VALIDAÇÃO DO FORMULÁRIO EM TEMPO REAL =====
+        const form = document.querySelector('form');
+
+        if (form) {
+            const nameInput = form.querySelector('input[type="text"]');
+            const emailInput = form.querySelector('input[type="email"]');
+            const messageInput = form.querySelector('textarea');
+
+            // Função para validar email
+            function validateEmail(email) {
+                const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                return re.test(email);
+            }
+
+            // Função para mostrar erro
+            function showError(input, message) {
+                const formGroup = input.parentElement;
+                let error = formGroup.querySelector('.error-message');
+
+                if (!error) {
+                    error = document.createElement('span');
+                    error.className = 'error-message';
+                    formGroup.appendChild(error);
+                }
+
+                error.textContent = message;
+                input.classList.add('error');
+            }
+
+            // Função para remover erro
+            function removeError(input) {
+                const formGroup = input.parentElement;
+                const error = formGroup.querySelector('.error-message');
+
+                if (error) {
+                    error.remove();
+                }
+
+                input.classList.remove('error');
+            }
+
+            // Validação do nome
+            if (nameInput) {
+                nameInput.addEventListener('blur', function() {
+                    if (this.value.trim().length < 3) {
+                        showError(this, 'Nome deve ter pelo menos 3 caracteres');
+                    } else {
+                        removeError(this);
+                    }
+                });
+
+                nameInput.addEventListener('input', function() {
+                    if (this.value.trim().length >= 3) {
+                        removeError(this);
+                    }
+                });
+            }
+
+            // Validação do email
+            if (emailInput) {
+                emailInput.addEventListener('blur', function() {
+                    if (!validateEmail(this.value)) {
+                        showError(this, 'Por favor, insira um e-mail válido (ex: nome@exemplo.com)');
+                    } else {
+                        removeError(this);
+                    }
+                });
+
+                emailInput.addEventListener('input', function() {
+                    if (validateEmail(this.value)) {
+                        removeError(this);
+                    }
+                });
+            }
+
+            // Validação da mensagem
+            if (messageInput) {
+                messageInput.addEventListener('blur', function() {
+                    if (this.value.trim().length < 10) {
+                        showError(this, 'Mensagem deve ter pelo menos 10 caracteres');
+                    } else {
+                        removeError(this);
+                    }
+                });
+
+                messageInput.addEventListener('input', function() {
+                    if (this.value.trim().length >= 10) {
+                        removeError(this);
+                    }
+                });
+            }
+
+            // Validação no envio
+            form.addEventListener('submit', function(e) {
+                e.preventDefault();
+
+                let isValid = true;
+
+                if (nameInput && nameInput.value.trim().length < 3) {
+                    showError(nameInput, 'Nome deve ter pelo menos 3 caracteres');
+                    isValid = false;
+                }
+
+                if (emailInput && !validateEmail(emailInput.value)) {
+                    showError(emailInput, 'Por favor, insira um e-mail válido');
+                    isValid = false;
+                }
+
+                if (messageInput && messageInput.value.trim().length < 10) {
+                    showError(messageInput, 'Mensagem deve ter pelo menos 10 caracteres');
+                    isValid = false;
+                }
+
+                if (isValid) {
+                    alert('✓ Formulário válido! Obrigado pelo contato. Em breve responderei sua mensagem.');
+                    form.reset();
+                }
+            });
+        }
+
+        // ===== INDICADOR DE SEÇÃO ATIVA NO MENU =====
+        const sections = document.querySelectorAll('section[id]');
+        const navLinks = document.querySelectorAll('.nav-links a');
+
+        window.addEventListener('scroll', function() {
+            let current = '';
+
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                if (pageYOffset >= sectionTop - 100) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href').includes(current)) {
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // ===== SMOOTH SCROLL =====
+        navLinks.forEach(link => {
+            link.addEventListener('click', function(e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+
+                if (targetSection) {
+                    window.scrollTo({
+                        top: targetSection.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    });
+    </script>
+
 </body>
 
 </html>
-
-
